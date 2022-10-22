@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "697378167150",
+    "project_id": "loginra-eafaf",
+    "storage_bucket": "loginra-eafaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697378167150:android:cd05d2c2c85c8f0269897f",
+        "android_client_info": {
+          "package_name": "com.example.reminderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697378167150-1a80ltobdvdpo3evib858qd7l05u41d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reminderapp",
+            "certificate_hash": "e70fd346a68389b44abd141f0670fb175524b15c"
+          }
+        },
+        {
+          "client_id": "697378167150-5qoj1srbrr8af45tocdv0vka8nqenpjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTwtP3eMGtmIuBFS3S-G87i0IiFkh8NkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697378167150-5qoj1srbrr8af45tocdv0vka8nqenpjn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

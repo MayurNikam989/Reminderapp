@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/addalert.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/email.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/gradient_color.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/mainmenu.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/pass.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/person.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/phone.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/reg.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/registerr.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/round_border.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/round_button.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/user.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/wave.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/wave1.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/whitemenu.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_forget_pass.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_splash_scr.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

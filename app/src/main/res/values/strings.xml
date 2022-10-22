@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Reminder App</string>
+    <string name="mp">[0-9]{10}</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ReminderApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#ff5500</item>
+        <item name="colorPrimaryVariant">#ff5500</item>
+        <item name="colorOnPrimary">#ff5500</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#ff5500</item>
+        <item name="colorSecondaryVariant">#ff5500</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
