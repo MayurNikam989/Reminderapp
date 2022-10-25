@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:background="@color/primary"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:background="@drawable/wave"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view13" />
@@ -29,11 +31,13 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:fontFamily="serif"
         android:text="Welcome !!"
         android:textColor="@color/primary"
         android:textSize="34dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,6 +52,7 @@
         android:text="XXX"
         android:textColor="@color/primary"
         android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -56,8 +61,8 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/view14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +88,8 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginLeft="32dp"
                     android:background="@drawable/mainmenu"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <View
                         android:id="@+id/view7"
@@ -94,7 +100,8 @@
                         android:layout_marginLeft="32dp"
                         android:layout_marginEnd="32dp"
                         android:layout_marginRight="32dp"
-                        android:background="@drawable/addalert" />
+                        android:background="@drawable/addalert"
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -117,7 +124,8 @@
                     android:layout_marginRight="32dp"
                     android:background="@drawable/mainmenu"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <View
                         android:id="@+id/view8"
@@ -127,7 +135,8 @@
                         android:layout_marginLeft="32dp"
                         android:layout_marginEnd="32dp"
                         android:layout_marginRight="32dp"
-                        android:background="@drawable/currentalert" />
+                        android:background="@drawable/currentalert"
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/textView4"
@@ -154,7 +163,8 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginLeft="32dp"
                     android:background="@drawable/mainmenu"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <View
                         android:id="@+id/view9"
@@ -165,7 +175,8 @@
                         android:layout_marginLeft="32dp"
                         android:layout_marginEnd="32dp"
                         android:layout_marginRight="32dp"
-                        android:background="@drawable/use" />
+                        android:background="@drawable/use"
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/textView5"
@@ -188,7 +199,8 @@
                     android:layout_marginRight="32dp"
                     android:background="@drawable/mainmenu"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <View
                         android:id="@+id/view10"
@@ -198,7 +210,8 @@
                         android:layout_marginLeft="32dp"
                         android:layout_marginEnd="32dp"
                         android:layout_marginRight="32dp"
-                        android:background="@drawable/help" />
+                        android:background="@drawable/help"
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -225,7 +238,8 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginLeft="32dp"
                     android:background="@drawable/mainmenu"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <View
                         android:id="@+id/view11"
@@ -236,7 +250,8 @@
                         android:layout_marginLeft="32dp"
                         android:layout_marginEnd="32dp"
                         android:layout_marginRight="32dp"
-                        android:background="@drawable/setings" />
+                        android:background="@drawable/setings"
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -259,7 +274,8 @@
                     android:layout_marginRight="32dp"
                     android:background="@drawable/mainmenu"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <View
                         android:id="@+id/view12"
@@ -269,7 +285,8 @@
                         android:layout_marginLeft="32dp"
                         android:layout_marginEnd="32dp"
                         android:layout_marginRight="32dp"
-                        android:background="@drawable/abtus" />
+                        android:background="@drawable/abtus"
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/textView8"
@@ -305,9 +322,9 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/logout"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
@@ -325,6 +342,17 @@
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/ic_wave__2_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

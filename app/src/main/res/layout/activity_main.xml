@@ -10,7 +10,8 @@
         android:id="@+id/topview"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#fa6132"
+        android:background="@color/primary"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,6 +65,7 @@
         android:inputType="phone"
         android:padding="16dp"
         android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
@@ -82,6 +84,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone2"
@@ -98,10 +101,14 @@
         android:padding="0dp"
         android:text="Login"
         android:textColor="#FFFFFF"
+        android:textColorLink="@color/primary"
         android:textSize="18dp"
+        app:backgroundTint="@color/primary"
+        app:layout_constraintBottom_toTopOf="@+id/fpass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
+        app:rippleColor="@color/primary"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -111,8 +118,9 @@
         android:layout_marginTop="24dp"
         android:fontFamily="serif"
         android:text="FORGOT PASSWORD?"
-        android:textColor="#fa6132"
+        android:textColor="@color/primary"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
@@ -122,23 +130,29 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="1dp"
         android:fontFamily="serif"
         android:onClick="openact"
         android:text="New User Register Here"
-        android:textColor="#fa6132"
+        android:textColor="@color/primary"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fpass" />
 
     <View
         android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:background="@drawable/wave1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_wave__2_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

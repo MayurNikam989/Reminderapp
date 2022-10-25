@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/abt.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/abtus.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/addalert.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/clock.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/currentalert.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/email.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/gradient_color.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/help.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/ic_wave__2_.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/mainmenu.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/menu.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/pass.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/person.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/phone.xml" value="0.2265" />
@@ -14,14 +23,16 @@
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/registerr.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/round_border.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/round_button.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/setings.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/use.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/user.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/wave.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/wave1.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/whitemenu.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_forget_pass.xml" value="0.25" />
-        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_main.xml" value="0.176" />
-        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_splash_scr.xml" value="0.25" />
       </map>
     </option>
@@ -31,5 +42,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.10400000000000001" />
+      </ProjectState>
+    </option>
   </component>
 </project>
