@@ -5,7 +5,7 @@
             <gradient
                 android:gradientRadius="300dp"
                 android:endColor="@color/primary"
-                android:startColor="#ffffff"
+                android:startColor="#ff6977"
                 android:type="radial" />
         </shape>
     </item>

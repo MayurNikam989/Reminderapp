@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class register extends AppCompatActivity {
     private EditText name,remail,phone,password;
     String emailpattern = "[a-zA-z0-9._-]+@[a-z]+\\.+[a-z]+";
     String mobilepattern = "[0-9]{10}";
+    ProgressDialog dialogbox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class register extends AppCompatActivity {
         remail = findViewById(R.id.regemail);
         phone = findViewById(R.id.phone);
         password = findViewById(R.id.pass);
+        dialogbox = new ProgressDialog(this);
         DatabaseReference dbr = FirebaseDatabase.getInstance().getReferenceFromUrl("https://loginra-eafaf-default-rtdb.firebaseio.com/");
 
         regbtn.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +65,10 @@ public class register extends AppCompatActivity {
                                 dbr.child("users").child(mobile).child("Name").setValue(nam);
                                 dbr.child("users").child(mobile).child("Email").setValue(mel);
                                 dbr.child("users").child(mobile).child("Password").setValue(pw);
+                                dialogbox.setMessage("Please wait While Registration...");
+                                dialogbox.setTitle("Registration");
+                                dialogbox.setCanceledOnTouchOutside(false);
+                                dialogbox.show();
                                 Toast.makeText(register.this, "Registered SuccesFully", Toast.LENGTH_SHORT).show();
                                 finish();
                             }

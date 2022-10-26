@@ -31,6 +31,7 @@
         android:layout_width="200dp"
         android:layout_height="94dp"
         android:layout_marginTop="64dp"
+        android:fontFamily="serif"
         android:padding="16dp"
         android:text="Create New Account"
         android:textColor="#FFFFFF"
@@ -49,6 +50,7 @@
         android:drawableLeft="@drawable/reg"
         android:drawablePadding="16dp"
         android:ems="10"
+        android:fontFamily="serif"
         android:hint="Enter Name"
         android:inputType="textPersonName"
         android:padding="16dp"
@@ -66,6 +68,7 @@
         android:drawableLeft="@drawable/email"
         android:drawablePadding="16dp"
         android:ems="10"
+        android:fontFamily="serif"
         android:hint="Email ID"
         android:inputType="textEmailAddress"
         android:padding="16dp"
@@ -83,6 +86,7 @@
         android:drawableLeft="@drawable/phone"
         android:drawablePadding="16dp"
         android:ems="10"
+        android:fontFamily="serif"
         android:hint="Mobile"
         android:inputType="phone"
         android:padding="16dp"
@@ -100,6 +104,7 @@
         android:drawableLeft="@drawable/pass"
         android:drawablePadding="16dp"
         android:ems="10"
+        android:fontFamily="serif"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="16dp"
@@ -136,7 +141,8 @@
         app:layout_constraintBottom_toTopOf="@+id/view5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pass" />
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        android:fontFamily="serif" />
 
     <View
         android:id="@+id/view5"

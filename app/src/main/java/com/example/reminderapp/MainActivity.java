@@ -4,6 +4,7 @@ package com.example.reminderapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         //To skip login activity after logged in
         SharedPreferences sp = getSharedPreferences(MainActivity.PREFS_NAME,0);
         SharedPreferences.Editor editor = sp.edit();
-
+        ProgressDialog dialogbox = new ProgressDialog(this);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
 
                                     editor.putBoolean("HasLoggedIn", true);
                                     editor.commit();
+                                    dialogbox.setMessage("Please wait...");
+                                    dialogbox.setTitle("Login");
+                                    dialogbox.setCanceledOnTouchOutside(false);
+                                    dialogbox.show();
 
                                     Toast.makeText(MainActivity.this, "Login Succesfully", Toast.LENGTH_SHORT).show();
                                     Intent intent1 = new Intent(getApplicationContext(),home.class);
