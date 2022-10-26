@@ -105,6 +105,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        forpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(getApplicationContext(), forget_pass.class);
+                startActivity(intent2);
+            }
+        });
     }
 
 
