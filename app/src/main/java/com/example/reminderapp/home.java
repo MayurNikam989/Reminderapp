@@ -13,19 +13,23 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class home extends AppCompatActivity {
-
-
-
+    private static final String NAME = "name";
+    public static String PREFS_NAME = "Myprefsfile";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         TextView logout = findViewById(R.id.logout);
+        TextView setname = findViewById(R.id.setname);
         ProgressDialog dialogbox = new ProgressDialog(this);
+        SharedPreferences sp1 = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
+
+        String name = sp1.getString(NAME,"");
+        setname.setText(name);
+
         logout.setOnClickListener(new View.OnClickListener() {
             SharedPreferences sp = getSharedPreferences(MainActivity.PREFS_NAME,0);
             SharedPreferences.Editor editor = sp.edit();
-
             @Override
             public void onClick(View view) {
 
@@ -41,7 +45,7 @@ public class home extends AppCompatActivity {
                                 dialogbox.setTitle("Log Out");
                                 dialogbox.setCanceledOnTouchOutside(false);
                                 dialogbox.show();
-                                Toast.makeText(home.this, "Logged Out Succesfully", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(home.this, "LogOut Succesfull", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(intent);
                                 finishAffinity();

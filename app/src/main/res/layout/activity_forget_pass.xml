@@ -55,11 +55,18 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                app:srcCompat="@drawable/mo" />
+
             <EditText
                 android:id="@+id/ipmobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="15dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="0dp"
                 android:background="@drawable/mainmenu"
@@ -77,63 +84,13 @@
                 android:id="@+id/getotp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="15dp"
                 android:background="@drawable/round_button"
                 android:padding="15dp"
                 android:text="Get OTP"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
-            <EditText
-                android:id="@+id/otp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/mainmenu"
-                android:ems="10"
-                android:hint="Enter OTP"
-                android:inputType="number"
-                android:padding="15dp"
-                android:visibility="gone"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-            <Button
-                android:id="@+id/verifyotp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/round_button"
-                android:padding="15dp"
-                android:text="Verify OTP"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:visibility="gone"
-                app:backgroundTint="@color/primary"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/otp" />
-
-            <TextView
-                android:id="@+id/resendotp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:visibility="gone"
-                android:padding="10dp"
-                android:text="Resend OTP"
-                android:textColor="@color/primary" />
         </LinearLayout>
     </ScrollView>
 

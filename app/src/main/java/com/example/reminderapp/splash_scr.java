@@ -33,7 +33,7 @@ public class splash_scr extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    sleep(4000);
+                    sleep(1500);
                 }catch (Exception e){
                     e.printStackTrace();
                 }finally {

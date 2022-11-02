@@ -22,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String NAME = "name";
     private EditText phone,password;
     DatabaseReference dbr = FirebaseDatabase.getInstance().getReferenceFromUrl("https://loginra-eafaf-default-rtdb.firebaseio.com/");
 
@@ -68,16 +69,20 @@ public class MainActivity extends AppCompatActivity {
                             if(snapshot.hasChild(mo)){
                                 final String getpass = snapshot.child(mo).child("Password").getValue(String.class);
                                 if (getpass.equals(pass)) {
-
+                                    final String setname = snapshot.child(mo).child("Name").getValue(String.class);
                                     editor.putBoolean("HasLoggedIn", true);
                                     editor.commit();
                                     dialogbox.setMessage("Please wait...");
                                     dialogbox.setTitle("Login");
                                     dialogbox.setCanceledOnTouchOutside(false);
                                     dialogbox.show();
-
-                                    Toast.makeText(MainActivity.this, "Login Succesfully", Toast.LENGTH_SHORT).show();
+                                    SharedPreferences sp1 = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
+                                    SharedPreferences.Editor editor1 = sp1.edit();
+                                    editor1.putString(NAME,snapshot.child(mo).child("Name").getValue((String.class)));
+                                    editor1.apply();
+                                    Toast.makeText(MainActivity.this, "Login Succesfull", Toast.LENGTH_SHORT).show();
                                     Intent intent1 = new Intent(getApplicationContext(),home.class);
+
                                     startActivity(intent1);
                                     finishAffinity();
                                 }else{
