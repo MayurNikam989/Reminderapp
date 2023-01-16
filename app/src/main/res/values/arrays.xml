@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="preloaded_fonts" />
+    <string-array name="more_points">
+        <item>Help</item>
+        <item>Options</item>
+        <item>About us</item>
+        <item>Privacy Policy</item>
+
+    </string-array>
+
+    <string-array name="profile_points">
+
+        <item>Profile</item>
+        <item>Logout</item>
+
+    </string-array>
 </resources>

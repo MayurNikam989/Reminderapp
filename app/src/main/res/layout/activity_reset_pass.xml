@@ -4,95 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
     tools:context=".reset_pass">
 
-    <View
-        android:id="@+id/view20"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:background="@drawable/wave"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view19" />
-
-    <View
-        android:id="@+id/view19"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/primary"
-        app:layout_constraintBottom_toTopOf="@+id/view20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset Password"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/view20"
-        app:layout_constraintEnd_toEndOf="@+id/view19"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view20">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView6"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="0dp"
-            android:foregroundGravity="center"
-            android:padding="5dp"
-            app:srcCompat="@drawable/rp" />
+            android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/new_pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:background="@drawable/mainmenu"
-            android:drawableLeft="@drawable/pass"
-            android:drawablePadding="15dp"
-            android:ems="10"
-            android:hint="Enter New Password"
-            android:inputType="textPassword"
-            android:padding="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/whitemenu"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/con_new_pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:background="@drawable/mainmenu"
-            android:drawableLeft="@drawable/pass"
-            android:drawablePadding="15dp"
-            android:ems="10"
-            android:hint="Confirm New Password"
-            android:inputType="textPersonName"
-            android:padding="15dp" />
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Reset Password"
+                    android:textColor="@color/primary"
+                    android:textSize="34sp" />
 
-        <Button
-            android:id="@+id/reset_pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:background="@drawable/round_button"
-            android:padding="15dp"
-            android:text="Reset Password"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth"
+                    android:gravity="center"
+                    android:text="Create New Password"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Password must contain atleast 1 symbol, and should contain minimum 8 characters" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:foregroundGravity="center"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/rp1" />
+
+                <EditText
+                    android:id="@+id/new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/mainmenu"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/amaranth"
+                    android:hint="Enter New Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/con_new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/mainmenu"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/amaranth"
+                    android:hint="Confirm New Password"
+                    android:inputType="textPersonName"
+                    android:padding="15dp" />
+
+                <Button
+                    android:id="@+id/reset_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_button"
+                    android:fontFamily="@font/amaranth"
+                    android:padding="10dp"
+                    android:text="Reset Password"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,94 +4,139 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
     tools:context=".forget_pass">
 
-    <View
-        android:id="@+id/view15"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/primary"
-        app:layout_constraintBottom_toTopOf="@+id/view16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/view16"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:background="@drawable/wave"
-        app:layout_constraintTop_toBottomOf="@+id/view15" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="150dp"
-        android:layout_marginRight="150dp"
-        android:text="Forgot Password"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view15"
-        app:layout_constraintTop_toTopOf="@+id/view15"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="619dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view16"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <ScrollView
+            android:id="@+id/scrollView4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                app:srcCompat="@drawable/mo" />
-
-            <EditText
-                android:id="@+id/ipmobile"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/mainmenu"
-                android:ems="10"
-                android:fadingEdge="none"
-                android:hint="Enter Mobile No."
-                android:inputType="phone"
-                android:padding="15dp"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                android:layout_margin="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/whitemenu"
+                android:hapticFeedbackEnabled="true"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-            <Button
-                android:id="@+id/getotp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/round_button"
-                android:padding="15dp"
-                android:text="Get OTP"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Forgot Password"
+                    android:textColor="@color/primary"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </LinearLayout>
-    </ScrollView>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/amaranth"
+                    android:gravity="center"
+                    android:text="Enter Your Mobile Number"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:bufferType="spannable"
+                    android:fontFamily="@font/amaranth"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Enter your registered mobile no. An one time password will be send on your mobile no."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#919191" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/mo" />
+
+                <EditText
+                    android:id="@+id/ipmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/mainmenu"
+                    android:ems="10"
+                    android:fadingEdge="none"
+                    android:fontFamily="@font/amaranth"
+                    android:hint="Enter your Mobile Here"
+                    android:inputType="phone"
+                    android:padding="15dp"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <Button
+                    android:id="@+id/getotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_button"
+                    android:fontFamily="@font/amaranth"
+                    android:padding="10dp"
+                    android:text="Get OTP"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

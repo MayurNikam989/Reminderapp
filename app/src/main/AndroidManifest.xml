@@ -29,8 +29,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".home"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:exported="false" />
         <activity
             android:name=".register"
             android:exported="false"
@@ -54,6 +53,10 @@
                 android:name="preloaded_fonts"
                 android:resource="@array/preloaded_fonts" />
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

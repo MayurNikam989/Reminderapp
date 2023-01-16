@@ -10,16 +10,23 @@
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/clock.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/currentalert.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/email.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/gradient1.xml" value="0.2465" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/gradient2.xml" value="0.2465" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/gradient3.xml" value="0.2465" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/gradient_color.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/help.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.2465" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/ic_wave__2_.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/ic_wave__3_.xml" value="0.2465" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/mainmenu.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/menu.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/menuborder.xml" value="0.2465" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/pass.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/person.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/phone.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/reg.xml" value="0.2265" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/register.xml" value="0.2465" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/registerr.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/round_border.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/round_button.xml" value="0.2265" />
@@ -29,11 +36,11 @@
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/wave.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/wave1.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/whitemenu.xml" value="0.2265" />
-        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_forget_pass.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_forget_pass.xml" value="0.264" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_home.xml" value="0.264" />
-        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_register.xml" value="0.264" />
-        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_reset_pass.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_reset_pass.xml" value="0.2" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_splash_scr.xml" value="0.25" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_verify_otp.xml" value="0.25" />
       </map>
