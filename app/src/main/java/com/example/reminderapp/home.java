@@ -14,9 +14,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class home extends AppCompatActivity {
     private static final String NAME = "name";
     public static String PREFS_NAME = "Myprefsfile";
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +32,15 @@ public class home extends AppCompatActivity {
         String name = sp1.getString(NAME,"");
         setname.setText(name);
 
+        mAuth = FirebaseAuth.getInstance();
+
         logout.setOnClickListener(new View.OnClickListener() {
             SharedPreferences sp = getSharedPreferences(MainActivity.PREFS_NAME,0);
             SharedPreferences.Editor editor = sp.edit();
             @Override
             public void onClick(View view) {
+
+
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(home.this);
                 builder.setMessage("Are you sure you want to Log out?")
@@ -47,6 +54,7 @@ public class home extends AppCompatActivity {
                                 dialogbox.setTitle("Log Out");
                                 dialogbox.setCanceledOnTouchOutside(false);
                                 dialogbox.show();
+                                mAuth.signOut();
                                 Toast.makeText(home.this, "LogOut Succesfull", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(intent);

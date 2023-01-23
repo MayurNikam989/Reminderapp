@@ -40,7 +40,7 @@ public class splash_scr extends AppCompatActivity {
                     SharedPreferences sp = getSharedPreferences(MainActivity.PREFS_NAME,0);
                     boolean HasLoggedIn = sp.getBoolean("HasLoggedIn", false);
 
-                    if(HasLoggedIn){
+                    if(false){
                         Intent intent1 =  new Intent(splash_scr.this,home.class);
                         startActivity(intent1);
                         finishAffinity();
