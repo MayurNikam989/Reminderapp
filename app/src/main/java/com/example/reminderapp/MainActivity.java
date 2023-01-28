@@ -185,12 +185,12 @@ private SignInClient oneTapClient;
                                 final String getpass = snapshot.child(mo).child("Password").getValue(String.class);
                                 if (getpass.equals(pass)) {
                                     final String setname = snapshot.child(mo).child("Name").getValue(String.class);
-                                    editor.putBoolean("HasLoggedIn", true);
-                                    editor.commit();
-                                    dialogbox.setMessage("Please wait...");
-                                    dialogbox.setTitle("Login");
-                                    dialogbox.setCanceledOnTouchOutside(false);
-                                    dialogbox.show();
+//                                    editor.putBoolean("HasLoggedIn", true);
+//                                    editor.commit();
+//                                    dialogbox.setMessage("Please wait...");
+//                                    dialogbox.setTitle("Login");
+//                                    dialogbox.setCanceledOnTouchOutside(false);
+//                                    dialogbox.show();
                                     SharedPreferences sp1 = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
                                     SharedPreferences.Editor editor1 = sp1.edit();
                                     editor1.putString(NAME,snapshot.child(mo).child("Name").getValue((String.class)));

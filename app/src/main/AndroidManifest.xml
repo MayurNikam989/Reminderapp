@@ -4,6 +4,10 @@
     package="com.example.reminderapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+
 
     <application
         android:allowBackup="true"
@@ -17,6 +21,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReminderApp"
         tools:targetApi="31">
+
+
+        <activity
+            android:name=".NotificationMessage"
+            android:exported="false" />
+        <activity
+            android:name=".ReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" >
+
+        </activity>
         <activity
             android:name=".reset_pass"
             android:exported="false" />
@@ -57,6 +74,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name="AlarmBroadcast" />
     </application>
 
 </manifest>
