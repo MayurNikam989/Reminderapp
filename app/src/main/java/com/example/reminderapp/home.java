@@ -1,20 +1,27 @@
 package com.example.reminderapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.ArrayList;
 
 public class home extends AppCompatActivity {
     private static final String NAME = "name";
@@ -25,6 +32,7 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         ImageButton logout = findViewById(R.id.more);
+        TextView show_Excel = findViewById(R.id.exl_Reader);
         TextView setname = findViewById(R.id.setname);
         TextView tasks = findViewById(R.id.tasks);
         ProgressDialog dialogbox = new ProgressDialog(this);
@@ -35,6 +43,30 @@ public class home extends AppCompatActivity {
         setname.setText(name);
 
         mAuth = FirebaseAuth.getInstance();
+
+//        RecyclerView mRecyclerview = (RecyclerView) findViewById(R.id.recyclerView2);
+//        mRecyclerview.setLayoutManager(new LinearLayoutManager(this));
+//
+//
+//        Cursor cursor = new dbManager(getApplicationContext()).readallreminders();                  //Cursor To Load data From the database
+//        ArrayList<Model> dataholder = null;
+//        while (cursor.moveToNext()) {
+//            Model model = new Model(cursor.getString(1), cursor.getString(2), cursor.getString(3));
+//            dataholder.add(model);
+//        }
+//
+//        myAdapter adapter = new myAdapter(dataholder);
+//        mRecyclerview.setAdapter(adapter);                                                          //Binds the adapter with recyclerview
+
+
+        show_Excel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(home.this,Exl_reader.class));
+            }
+        });
+
+
 
         tasks.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +106,7 @@ public class home extends AppCompatActivity {
                                 Toast.makeText(home.this, "LogOut Succesfull", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(intent);
-                                finishAffinity();
+                                finish();
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {

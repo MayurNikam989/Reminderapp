@@ -43,9 +43,9 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.myviewholder> {
         public myviewholder(@NonNull View itemView) {
             super(itemView);
 
-            mTitle = (TextView) itemView.findViewById(R.id.txtTitle);                               //holds the reference of the materials to show data in recyclerview
-            mDate = (TextView) itemView.findViewById(R.id.txtDate);
-            mTime = (TextView) itemView.findViewById(R.id.txtTime);
+            mTitle = (TextView) itemView.findViewById(R.id.xlTime);                               //holds the reference of the materials to show data in recyclerview
+            mDate = (TextView) itemView.findViewById(R.id.xlTitle);
+            mTime = (TextView) itemView.findViewById(R.id.xlDate);
         }
     }
 }

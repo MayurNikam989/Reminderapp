@@ -16,6 +16,8 @@
             android:layout_height="48dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginStart="165dp"
+            android:layout_marginLeft="165dp"
             android:text="Snooz off"
             android:textColor="@color/white"
             android:textSize="10sp"
@@ -26,8 +28,9 @@
             android:layout_width="60dp"
             android:layout_height="45dp"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:layout_marginLeft="-10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
             android:src="@mipmap/ic_launcher" />
 
@@ -43,9 +46,10 @@
                 android:id="@+id/message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
                 android:text="Flashlight"
                 android:textColor="#000000"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -53,6 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
+                android:fontFamily="@font/amaranth"
                 android:text="90% Charging"
                 android:textColor="#000000"
                 android:textSize="13sp" />

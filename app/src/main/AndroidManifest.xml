@@ -6,8 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
-
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,8 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReminderApp"
         tools:targetApi="31">
-
-
+        <activity
+            android:name=".Exl_reader"
+            android:exported="false" />
         <activity
             android:name=".NotificationMessage"
             android:exported="false" />
@@ -31,9 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".reset_pass"
             android:exported="false" />
@@ -75,7 +73,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <receiver android:name="AlarmBroadcast" />
+        <receiver android:name=".AlarmBroadcast" />
     </application>
 
 </manifest>

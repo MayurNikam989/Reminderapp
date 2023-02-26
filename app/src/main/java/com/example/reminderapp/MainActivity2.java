@@ -1,6 +1,5 @@
 package com.example.reminderapp;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,7 +11,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -55,6 +53,5 @@ public class MainActivity2 extends AppCompatActivity {
     public void onBackPressed() {
         finish();                                                                                   //Makes the user to exit form the app
         super.onBackPressed();
-
     }
 }

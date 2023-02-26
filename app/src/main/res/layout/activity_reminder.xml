@@ -59,7 +59,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/mainmenu"
                 android:fontFamily="@font/amaranth"
-                android:hint="Enter The Task"
+                android:hint="Enter The Task..."
                 android:minHeight="48dp"
                 android:padding="10dp" />
 
@@ -108,6 +108,48 @@
                 android:fontFamily="@font/amaranth"
                 android:text="Save"
                 android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="-------------or--------------" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Insert an Academic or Departmental Calender, should contain event Date and enent Details"
+                android:textColor="#B3B0B0" />
+
+            <EditText
+                android:id="@+id/remTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/mainmenu"
+                android:ems="10"
+                android:fontFamily="@font/amaranth"
+                android:hint="Enter Title For Reminder.."
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/uploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/mainmenu"
+                android:fontFamily="@font/amaranth"
+                android:text="Upload a File"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
         </LinearLayout>
