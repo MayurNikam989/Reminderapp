@@ -22,6 +22,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     List<String> dates;
 
     public Adapter(Context context, List<String> titles, List<String> descriptions, List<String> dates){
+
         this.layoutInflater = LayoutInflater.from(context);
         this.titles = titles;
         this.descriptions = descriptions;
@@ -32,6 +33,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
         View view = layoutInflater.inflate(R.layout.custom_layout,parent,false);
         return new ViewHolder(view);
     }
@@ -46,7 +48,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.Content.setText(desc);
         holder.titles.setText(title);
         holder.Date.setText(date);
-
 
     }
 

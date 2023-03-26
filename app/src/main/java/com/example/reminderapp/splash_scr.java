@@ -41,7 +41,7 @@ public class splash_scr extends AppCompatActivity {
                     boolean HasLoggedIn = sp.getBoolean("HasLoggedIn", false);
 
                     if(HasLoggedIn){
-                        Intent intent1 =  new Intent(splash_scr.this,home.class);
+                        Intent intent1 =  new Intent(splash_scr.this,Home2.class);
                         startActivity(intent1);
                         finishAffinity();
                     }else{

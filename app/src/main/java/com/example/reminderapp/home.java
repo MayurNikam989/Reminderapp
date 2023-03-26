@@ -32,14 +32,14 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         ImageButton logout = findViewById(R.id.more);
-        TextView show_Excel = findViewById(R.id.exl_Reader);
-        TextView setname = findViewById(R.id.setname);
+        TextView show_Excel = findViewById(R.id.exl_Reader1);
+        TextView setname = findViewById(R.id.setname1);
         TextView tasks = findViewById(R.id.tasks);
         ProgressDialog dialogbox = new ProgressDialog(this);
         SharedPreferences sp1 = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
 
         String name = sp1.getString(NAME,"");
-        LinearLayout Addreminder = findViewById(R.id.addreminder);
+        LinearLayout Addreminder = findViewById(R.id.addreminder1);
         setname.setText(name);
 
         mAuth = FirebaseAuth.getInstance();
@@ -71,7 +71,7 @@ public class home extends AppCompatActivity {
         tasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(home.this, MainActivity2.class));
+                startActivity(new Intent(home.this, Home2.class));
             }
         });
 

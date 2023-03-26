@@ -146,7 +146,7 @@ private SignInClient oneTapClient;
 
                 signIn(signInRequest);
 
-                Toast.makeText(MainActivity.this, "clicked", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "clicked", Toast.LENGTH_SHORT).show();
 
 
 
@@ -185,18 +185,18 @@ private SignInClient oneTapClient;
                                 final String getpass = snapshot.child(mo).child("Password").getValue(String.class);
                                 if (getpass.equals(pass)) {
                                     final String setname = snapshot.child(mo).child("Name").getValue(String.class);
-//                                    editor.putBoolean("HasLoggedIn", true);
-//                                    editor.commit();
-//                                    dialogbox.setMessage("Please wait...");
-//                                    dialogbox.setTitle("Login");
-//                                    dialogbox.setCanceledOnTouchOutside(false);
-//                                    dialogbox.show();
+                                    editor.putBoolean("HasLoggedIn", true);
+                                    editor.commit();
+                                    dialogbox.setMessage("Please wait...");
+                                    dialogbox.setTitle("Login");
+                                    dialogbox.setCanceledOnTouchOutside(false);
+                                    dialogbox.show();
                                     SharedPreferences sp1 = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
                                     SharedPreferences.Editor editor1 = sp1.edit();
                                     editor1.putString(NAME,snapshot.child(mo).child("Name").getValue((String.class)));
                                     editor1.apply();
-                                    Toast.makeText(MainActivity.this, "Login Succesfull", Toast.LENGTH_SHORT).show();
-                                    Intent intent1 = new Intent(getApplicationContext(),home.class);
+                                    Toast.makeText(MainActivity.this, "Login succesfull", Toast.LENGTH_SHORT).show();
+                                    Intent intent1 = new Intent(getApplicationContext(),Home2.class);
 
                                     startActivity(intent1);
                                     finishAffinity();
@@ -373,7 +373,7 @@ private SignInClient oneTapClient;
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if(snapshot.hasChild(o.getUid())){
-                        Toast.makeText(MainActivity.this, "Love u", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, "Love u", Toast.LENGTH_SHORT).show();
                         System.out.println(o.getProviderData());
 
                     }else{
@@ -381,7 +381,7 @@ private SignInClient oneTapClient;
                         dbr.child("Profiles").child(o.getUid()).child("Email").setValue(o.getEmail());
                         dbr.child("Profiles").child(o.getUid()).child("Photourl").setValue(o.getPhotoUrl());
                         dbr.child("Profiles").child(o.getUid()).child("Phone").setValue(o.getPhoneNumber());
-                        Toast.makeText(MainActivity.this, "love", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, "love", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -391,7 +391,7 @@ private SignInClient oneTapClient;
                 }
             });
 
-            startActivity(new Intent(MainActivity.this, home.class));
+            startActivity(new Intent(MainActivity.this, Home2.class));
             finishAffinity();
         }
         

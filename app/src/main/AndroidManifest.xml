@@ -21,6 +21,11 @@
         android:theme="@style/Theme.ReminderApp"
         tools:targetApi="31">
         <activity
+            android:name=".Home2"
+            android:exported="false"
+            android:label="@string/title_activity_home2"
+            android:theme="@style/Theme.ReminderApp.NoActionBar" />
+        <activity
             android:name=".Exl_reader"
             android:exported="false" />
         <activity
@@ -31,7 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".reset_pass"
             android:exported="false" />

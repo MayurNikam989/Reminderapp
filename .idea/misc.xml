@@ -38,7 +38,8 @@
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/drawable/whitemenu.xml" value="0.2265" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_exl_reader.xml" value="0.25" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_forget_pass.xml" value="0.264" />
-        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_home2.xml" value="0.264" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_notification_message.xml" value="0.25" />
@@ -47,9 +48,17 @@
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_reset_pass.xml" value="0.2" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_splash_scr.xml" value="0.25" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/activity_verify_otp.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/app_bar_home2.xml" value="0.264" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/content_home2.xml" value="0.4" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/custom_layout.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/fragment_slideshow.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/nav_header_home2.xml" value="0.25" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/notification_layout.xml" value="0.4" />
         <entry key="..\:/Users/HOME/Reminder/app/src/main/res/layout/single_reminder_file.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/Reminder/app/src/main/res/menu/home2.xml" value="0.25" />
       </map>
     </option>
   </component>

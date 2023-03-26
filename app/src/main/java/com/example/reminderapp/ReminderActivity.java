@@ -147,7 +147,7 @@ public class ReminderActivity extends AppCompatActivity {
         progressDialog.setTitle("Uploading...");
         progressDialog.show();
 
-        StorageReference reference = storageReference.child("Uploads/"+System.currentTimeMillis()+".xls");
+        StorageReference reference = storageReference.child("Uploads/"+mremTitle+".xls");
         reference.putFile(data)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
@@ -267,7 +267,7 @@ public class ReminderActivity extends AppCompatActivity {
             Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show();
         }
 
-        Intent intentBack = new Intent(getApplicationContext(), home.class);                //this intent will be called once the setting alaram is completes
+        Intent intentBack = new Intent(getApplicationContext(), Home2.class);                //this intent will be called once the setting alaram is completes
         intentBack.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intentBack);                                                                  //navigates from adding reminder activity ot mainactivity
 
